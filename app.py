@@ -6,9 +6,12 @@ import os
 app = Flask(__name__)
 
 # Load the trained model and preprocessing objects
-model = joblib.load('model/best_model.pkl')
-scaler = joblib.load('model/scaler.pkl')
-imputer = joblib.load('model/imputer.pkl')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_DIR = os.path.join(BASE_DIR, 'model')
+
+model = joblib.load(os.path.join(MODEL_DIR, 'best_model.pkl'))
+scaler = joblib.load(os.path.join(MODEL_DIR, 'scaler.pkl'))
+imputer = joblib.load(os.path.join(MODEL_DIR, 'imputer.pkl'))
 
 @app.route('/')
 def home():
@@ -103,3 +106,4 @@ def api_predict():
 
 if __name__ == '__main__':
     app.run(debug=True)
+

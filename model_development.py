@@ -5,8 +5,8 @@ This script performs the same operations as the Jupyter notebook
 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
+#import matplotlib.pyplot as plt
+#import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
@@ -19,8 +19,8 @@ import joblib
 warnings.filterwarnings('ignore')
 
 # Set plotting style
-plt.style.use('seaborn-v0_8')
-sns.set_palette("husl")
+#plt.style.use('seaborn-v0_8')
+#sns.set_palette("husl")
 
 def load_and_explore_data():
     """Load and explore the dataset"""
