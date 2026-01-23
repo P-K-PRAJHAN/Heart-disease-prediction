@@ -105,6 +105,10 @@ python app.py
 
 Visit `http://localhost:5000` in your browser to access the application.
 
+### Deployment URL
+
+https://pkprajhan.pythonanywhere.com/
+
 ## 🎯 Features
 
 ### 1. Heart Disease Prediction
